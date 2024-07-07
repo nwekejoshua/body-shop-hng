@@ -4,14 +4,15 @@ import { FiMapPin } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
+
 function Footer() {
   return (
-    <div className="bg-primary-50 text-white font-space font-normal">
+    <div className="bg-primary-50 text-white font-space font-normal ">
       <div className="px-20 py-20">
-        <div className="lg:flex justify-between">
-          <div className="">
+        <div className=" lg:flex justify-between mx-auto">
+          <div className="text-center">
             <div className="font-space  text-white text-[34px] ">Body Shop</div>
-            <div className="flex text-primary-50 gap-5 py-[32px]">
+            <div className="flex text-primary-50 gap-5 py-[32px] justify-center">
               <BsFacebook className="bg-white rounded-3xl p-[10px]" size={40} />
               <BsInstagram
                 className="bg-white  rounded-3xl p-[10px]"
@@ -20,7 +21,7 @@ function Footer() {
               <BsTwitter className="bg-white rounded-3xl p-[10px]" size={40} />
             </div>
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col items-center gap-y-2 justify-between">
             <p className=" font-normal text-[24px] ">Contact Us</p>
             <div className="flex gap-2 items-center text-[16px]">
               <FiMapPin size={20}/>
@@ -35,9 +36,14 @@ function Footer() {
               <p> 08141552442</p>
             </div>
           </div>
-          <div>
-            <p>Subscribe to our newsletter</p>
-            <p>Enter your email for more updates</p>
+          <div className="text-center py-3">
+            <p className="text-[24px] font-normal ">Subscribe to our newsletter</p>
+            <p className="py-5">Enter your email for more updates</p>
+            <input
+              className="border-white border-[1px] p-2 px-4 bg-primary-50 placeholder:text-white w-[360px] h-[50px]"
+              type="text"
+              placeholder="Enter your Email"
+            />
           </div>
         </div>
       </div>

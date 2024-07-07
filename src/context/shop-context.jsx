@@ -1,5 +1,7 @@
 import { createContext, useState } from "react"
 import { PRODUCTS } from "../products";
+import PropTypes from 'prop-types';
+
 
 
 export const ShopContext = createContext(null);
@@ -28,5 +30,9 @@ function ShopContextProvider(props) {
        <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>
     )
 }
+
+ShopContextProvider.propTypes = {
+    children: PropTypes.any.isRequired,
+  };
 
 export default ShopContextProvider

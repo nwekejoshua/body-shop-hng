@@ -1,6 +1,8 @@
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { ShopContext } from "../../context/shop-context";
 import { useContext } from "react";
+import PropTypes from 'prop-types';
+
 
 function Product(props) {
   const { id, productName, price, productImage, rating } = props.data;
@@ -75,11 +77,21 @@ function Product(props) {
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>
-          <p onClick={() => addToCart(id)} className="cursor-pointer hover:text-primary-50 text-[12px]">Add to Cart</p>
+          <p onClick={() => addToCart(id)} className="cursor-pointer text-[#426B69] hover:text-primary-50 text-[12px]">Add to Cart</p>
         </div>
       </div>
     </div>
   );
 }
+
+Product.propTypes = {
+    data: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      rating: PropTypes.number.isRequired,
+      productImage: PropTypes.string.isRequired,
+    }).isRequired,
+  };
 
 export default Product;

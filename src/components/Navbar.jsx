@@ -48,7 +48,7 @@ function Navbar() {
           <div className="relative ">
             <FiHeart className="bg-primary-50 rounded-3xl p-[10px]" size={40} />
             <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-              0
+              1
             </div>
           </div>
 
@@ -57,7 +57,7 @@ function Navbar() {
               <FaShoppingCart  className="bg-primary-50 rounded-3xl p-[10px]" size={40}/>
             </Link>
             <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-              0
+              3
             </div>
           </div>
         </div>

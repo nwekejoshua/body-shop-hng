@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
+import PropTypes from 'prop-types';
 
 
 function CartItem(props) {
     const { id, productName, price, productImage } = props.data;
     const { removeFromCart } = useContext(ShopContext);
-
 
     return (
         <div className="bg-primary-500 rounded-[12px] ">
@@ -27,6 +27,17 @@ function CartItem(props) {
       </div>
     </div>
     )
+
+
 }
+
+CartItem.propTypes = {
+    data: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      productImage: PropTypes.string.isRequired,
+    }).isRequired,
+  };
 
 export default CartItem
