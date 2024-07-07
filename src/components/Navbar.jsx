@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="pt-6 pb-3 px-10 md:px-20 bg-white ">
+    <div className="pt-6 pb-3 px-10 md:px-20 bg-white bg-cover bg-center h-[70vh]  bg-no-repeat bg-[url('./assets/imagebg.jpeg')]">
       <div className="flex justify-between items-center border-b border-primary-50 pb-5 ">
         <div className="font-normal font-space text-[20px] lg:text-3xl text-center pb-4 sm:pb-0 text-primary-50 ">
           <Link to="/"> Body Shop </Link>
         </div>
 
-        <div className="hidden lg:flex gap-[20px] text-black font-normal text-[16px] ">
+        <div className="hidden lg:flex gap-[20px] text-black font-normal text-[17px] ">
           <Link to="/">
             <div className="hover:text-primary-50 cursor-pointer">Home</div>
           </Link>

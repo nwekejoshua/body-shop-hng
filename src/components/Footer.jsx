@@ -40,7 +40,7 @@ function Footer() {
             <p className="text-[24px] font-normal ">Subscribe to our newsletter</p>
             <p className="py-5">Enter your email for more updates</p>
             <input
-              className="border-white border-[1px] p-2 px-4 bg-primary-50 placeholder:text-white w-[360px] h-[50px]"
+              className="border-white border-[1px] p-2 px-4 bg-primary-50 placeholder:text-white w-[70%] h-[50px]"
               type="text"
               placeholder="Enter your Email"
             />

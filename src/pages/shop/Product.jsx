@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 
 function Product(props) {
   const { id, productName, price, productImage, rating } = props.data;
+  const formattedNumber = new Intl.NumberFormat('en-US').format(price);
+
   const { addToCart } = useContext(ShopContext);
   const generateRating = (rating) => {
     switch (rating) {
@@ -62,7 +64,7 @@ function Product(props) {
     }
   };
   return (
-    <div className="bg-primary-500 rounded-[12px] lg:hover:scale-110 transition ease-in-out duration-300">
+    <div className="bg-[#D2D3CD] rounded-[12px] lg:hover:scale-110 transition ease-in-out duration-300">
       <div>
         <img
           src={productImage}
@@ -73,7 +75,7 @@ function Product(props) {
       <div className="space-y-2 p-5 bg-white rounded-xl">
         <div className="flex justify-between font-semibold">
           <h2>{productName}</h2>
-          <p>₦{price}</p>
+          <p>₦{formattedNumber}</p>
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>

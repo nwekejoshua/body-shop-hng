@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         space: ['Space Grotesk', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+
       },
       colors: {
         primary: {

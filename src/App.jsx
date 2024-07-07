@@ -4,6 +4,8 @@ import Shop from "./pages/shop/Shop";
 import Cart from "./pages/cart/Cart";
 import  ShopContextProvider  from "./context/shop-context";
 import Footer from "./components/Footer";
+import Shoes from "./pages/shoes/Shoes";
+import Wears from "./pages/wears/Wears";
 
 function App() {
   return (
@@ -14,10 +16,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/wears" />
-            <Route path="/shoes" />
-            <Route path="/bags" />
-            <Route path="/accesories" />
+            <Route path="/wears" element={<Wears />} />
+            <Route path="/shoes" element={<Shoes />} />
+            <Route path="/bags" element={<Wears />} />
+            <Route path="/accesories" element={<Wears />} />
           </Routes>
         </Router>
         <Footer />
