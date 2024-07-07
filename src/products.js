@@ -17,28 +17,28 @@ export const PRODUCTS = [
         id: 2,
         productName: "High Heel Shoes",
         price: 23000,
-        productImage: product2,
+        productImage: product1,
         rating: 1
     },
     {
         id: 3,
-        productName: "Brown Heel Dress Shoes",
+        productName: "Brown High Heel",
         price: 32000,
-        productImage: product3,
+        productImage: product1,
         rating: 2
     },
     {
         id: 4,
         productName: "Brown Timberland Boots",
         price: 55000,
-        productImage: product4,
+        productImage: product1,
         rating: 4
     },
     {
         id: 5,
         productName: "Brown Birkenstocks",
         price: 20000,
-        productImage: product5,
+        productImage: product1,
         rating: 3
     },
     {
@@ -49,7 +49,28 @@ export const PRODUCTS = [
         rating: 1
     },
     {
-        id: 6,
+        id: 7,
+        productName: "Brown Suede Shoes",
+        price: 61000,
+        productImage: product6,
+        rating: 1
+    },
+    {
+        id: 8,
+        productName: "Brown Suede Shoes",
+        price: 61000,
+        productImage: product6,
+        rating: 1
+    },
+    {
+        id: 9,
+        productName: "Brown Suede Shoes",
+        price: 61000,
+        productImage: product6,
+        rating: 1
+    },
+    {
+        id: 10,
         productName: "Brown Suede Shoes",
         price: 61000,
         productImage: product6,

@@ -3,11 +3,11 @@ import Product from "./Product";
 
 function Shop() {
   return (
-    <div>
+    <div className="bg-primary-300 md:px-20 px-4 py-5">
         
 
-      <div className="flex flex-col items-center mt-4">
-        <h1 className="text-[36px] font-bold">Shop From Body Shop</h1>
+      <div className="flex flex-col items-center ">
+        <h1 className="text-[28px] md:text-[36px] font-bold text-center">Shop From Body Shop</h1>
         <p className="text-[20px] mt-3 font-normal">Explore from our Catalog</p>
       </div>
 

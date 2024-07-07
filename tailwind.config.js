@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        space: ['Space Grotesk', 'sans-serif'],
+      },
       colors: {
         primary: {
           50: '#991E66',

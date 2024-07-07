@@ -1,12 +1,15 @@
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+import { ShopContext } from "../../context/shop-context";
+import { useContext } from "react";
 
 function Product(props) {
-  const { productName, price, productImage, rating } = props.data;
+  const { id, productName, price, productImage, rating } = props.data;
+  const { addToCart } = useContext(ShopContext);
   const generateRating = (rating) => {
     switch (rating) {
       case 1:
         return (
-          <div className="text-primary-50 text-[24px] flex">
+          <div className="text-primary-50 text-[22px] flex">
             <AiFillStar />
             <AiOutlineStar />
             <AiOutlineStar />
@@ -16,7 +19,7 @@ function Product(props) {
         );
       case 2:
         return (
-          <div className="text-primary-50 text-[24px] flex">
+          <div className="text-primary-50 text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiOutlineStar />
@@ -26,7 +29,7 @@ function Product(props) {
         );
       case 3:
         return (
-          <div className="text-primary-50 text-[24px] flex">
+          <div className="text-primary-50 text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -36,7 +39,7 @@ function Product(props) {
         );
       case 4:
         return (
-          <div className="text-primary-50 text-[24px] flex">
+          <div className="text-primary-50 text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -46,7 +49,7 @@ function Product(props) {
         );
       case 5:
         return (
-          <div className="text-primary-50 text-[24px] flex">
+          <div className="text-primary-50 text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -57,18 +60,22 @@ function Product(props) {
     }
   };
   return (
-    <div className=" rounded-xl max-w-[400px] lg:hover:scale-110 transition ease-in-out duration-300">
+    <div className="bg-primary-500 rounded-[12px] lg:hover:scale-110 transition ease-in-out duration-300">
       <div>
-        <img src={productImage} alt={productName} className="bg-primary-500"/>
+        <img
+          src={productImage}
+          alt={productName}
+          className=" w-full rounded-xl"
+        />
       </div>
-      <div className="space-y-2 py-5">
+      <div className="space-y-2 p-5 bg-white rounded-xl">
         <div className="flex justify-between font-semibold">
           <h2>{productName}</h2>
           <p>₦{price}</p>
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>
-          <p>Add to Cart</p>
+          <p onClick={() => addToCart(id)} className="cursor-pointer hover:text-primary-50 text-[12px]">Add to Cart</p>
         </div>
       </div>
     </div>
