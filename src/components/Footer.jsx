@@ -21,7 +21,7 @@ function Footer() {
               <BsTwitter className="bg-white rounded-3xl p-[10px]" size={40} />
             </div>
           </div>
-          <div className="flex flex-col items-center gap-y-2 justify-between">
+          <div className="flex flex-col  gap-y-2 justify-between">
             <p className=" font-normal text-[24px] ">Contact Us</p>
             <div className="flex gap-2 items-center text-[16px]">
               <FiMapPin size={20}/>
@@ -36,11 +36,11 @@ function Footer() {
               <p> 08141552442</p>
             </div>
           </div>
-          <div className="text-center py-3">
+          <div className="">
             <p className="text-[24px] font-normal ">Subscribe to our newsletter</p>
             <p className="py-5">Enter your email for more updates</p>
             <input
-              className="border-white border-[1px] p-2 px-4 bg-[#C80001] placeholder:text-white w-[70%] h-[50px]"
+              className="border-white border-[1px] p-2 px-4 bg-white placeholder:text-[#C80001] w-[100%]  rounded-md h-[50px]"
               type="text"
               placeholder="Enter your Email"
             />

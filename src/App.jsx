@@ -6,13 +6,14 @@ import  ShopContextProvider  from "./context/shop-context";
 import Footer from "./components/Footer";
 import Shoes from "./pages/shoes/Shoes";
 import Wears from "./pages/wears/Wears";
+import Checkout from "./pages/checkout/Checkout";
 
 function App() {
   return (
     <div className="">
       <ShopContextProvider>
         <Router>
-          <Navbar />
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
@@ -20,6 +21,7 @@ function App() {
             <Route path="/shoes" element={<Shoes />} />
             <Route path="/bags" element={<Wears />} />
             <Route path="/accesories" element={<Wears />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </Router>
         <Footer />

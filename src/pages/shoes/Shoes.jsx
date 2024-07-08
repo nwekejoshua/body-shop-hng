@@ -5,12 +5,12 @@ import Product from "../shop/Product";
 
 function Shoes() {
   return (
-    <div className="bg-white md:px-20 px-4 py-5  font-inter">
+    <div className="bg-white md:px-20 px-4 py-5   font-inter">
         
 
-      <div className="-mt-[55vh]">
+      <div className="-mt-[70vh]">
       <div className="flex flex-col items-center ">
-        <h1 className="text-[28px] md:text-[36px] font-bold text-center ">Shoes</h1>
+        <h1 className="text-[28px] font-bold text-center ">Shoes</h1>
         <p className="text-[16px] mt-3 font-normal">Explore our range of footwears</p>
       </div>
 

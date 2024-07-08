@@ -2,13 +2,28 @@ import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { ShopContext } from "../../context/shop-context";
 import { useContext } from "react";
 import PropTypes from 'prop-types';
+import { useState } from "react";
 
 
 function Product(props) {
   const { id, productName, price, productImage, rating } = props.data;
   const formattedNumber = new Intl.NumberFormat('en-US').format(price);
 
+
   const { addToCart } = useContext(ShopContext);
+  const [isAdded, setIsAdded] = useState(false);
+
+
+  const handleAddToCart = () => {
+    addToCart(id); // Call the addToCart function from context
+
+    // Toggle the text to 'Added to Cart' and reset after a delay
+    setIsAdded(true);
+    setTimeout(() => {
+      setIsAdded(false);
+    }, 2000); // Reset after 2 seconds (example)
+  };
+
   const generateRating = (rating) => {
     switch (rating) {
       case 1:
@@ -79,7 +94,9 @@ function Product(props) {
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>
-          <p onClick={() => addToCart(id)} className="cursor-pointer text-[#F08000] hover:text-[#C80001] text-[12px]">Add to Cart</p>
+          <p onClick={handleAddToCart} className="cursor-pointer text-[#F08000] hover:text-[#C80001] text-[12px]">
+      {isAdded ? 'Added to Cart' : 'Add to Cart'}
+    </p>          
         </div>
       </div>
     </div>
