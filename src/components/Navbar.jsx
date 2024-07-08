@@ -35,7 +35,7 @@ function Navbar() {
         <div className="hidden md:flex text-white  place-items-center  gap-4">
           <div className="w-full sm:w-[300px] md:w-[100%] relative">
             <input
-              className="border-primary-50 border-[2px] p-2 px-4 rounded-full w-[257px] h-[39px]"
+              className="border-gray-400 bg-transparent border-[1px] p-2 px-4 rounded-full w-[257px] h-[39px]"
               type="text"
               placeholder=""
             />
@@ -45,7 +45,7 @@ function Navbar() {
             />
           </div>
 
-          <div className="relative ">
+          <div className="relative">
             <FiHeart className="bg-primary-50 rounded-3xl p-[10px]" size={40} />
             <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
               1
@@ -62,10 +62,18 @@ function Navbar() {
           </div>
         </div>
 
-        <div>
-          <button className="lg:hidden rounded-lg hover:bg-primary-50 focus:ring-1 ">
+        <div className="flex gap-x-3">
+          <button className="lg:hidden rounded-lg text-primary-50 focus:ring-1 ">
             <RxHamburgerMenu size={25}/>
           </button>
+          <div className="relative md:hidden">
+            <Link to="/cart">
+              <FaShoppingCart  className="bg-primary-50 rounded-3xl p-[10px] text-white" size={40}/>
+            </Link>
+            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
+              3
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ function Product(props) {
     switch (rating) {
       case 1:
         return (
-          <div className="text-primary-50 text-[22px] flex">
+          <div className="text-[#C80001] text-[22px] flex">
             <AiFillStar />
             <AiOutlineStar />
             <AiOutlineStar />
@@ -23,7 +23,7 @@ function Product(props) {
         );
       case 2:
         return (
-          <div className="text-primary-50 text-[22px] flex">
+          <div className="text-[#C80001] text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiOutlineStar />
@@ -33,7 +33,7 @@ function Product(props) {
         );
       case 3:
         return (
-          <div className="text-primary-50 text-[22px] flex">
+          <div className="text-[#C80001] text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -43,7 +43,7 @@ function Product(props) {
         );
       case 4:
         return (
-          <div className="text-primary-50 text-[22px] flex">
+          <div className="text-[#C80001] text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -53,7 +53,7 @@ function Product(props) {
         );
       case 5:
         return (
-          <div className="text-primary-50 text-[22px] flex">
+          <div className="text-[#C80001] text-[22px] flex">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
@@ -79,7 +79,7 @@ function Product(props) {
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>
-          <p onClick={() => addToCart(id)} className="cursor-pointer text-[#426B69] hover:text-primary-50 text-[12px]">Add to Cart</p>
+          <p onClick={() => addToCart(id)} className="cursor-pointer text-[#F08000] hover:text-[#C80001] text-[12px]">Add to Cart</p>
         </div>
       </div>
     </div>

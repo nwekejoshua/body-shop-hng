@@ -7,12 +7,12 @@ import { BsFacebook } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className="bg-primary-50 text-white font-space font-normal ">
+    <div className="bg-[#C80001] text-white font-space font-normal ">
       <div className="px-20 py-20">
         <div className=" lg:flex justify-between mx-auto">
           <div className="text-center">
             <div className="font-space  text-white text-[34px] ">Body Shop</div>
-            <div className="flex text-primary-50 gap-5 py-[32px] justify-center">
+            <div className="flex text-[#C80001] gap-5 py-[32px] justify-center">
               <BsFacebook className="bg-white rounded-3xl p-[10px]" size={40} />
               <BsInstagram
                 className="bg-white  rounded-3xl p-[10px]"
@@ -25,7 +25,7 @@ function Footer() {
             <p className=" font-normal text-[24px] ">Contact Us</p>
             <div className="flex gap-2 items-center text-[16px]">
               <FiMapPin size={20}/>
-              <p> 2, Ilerin Stree, Lagos, Nigeria</p>
+              <p> 2, Ilerin Street, Lagos, Nigeria</p>
             </div>
             <div className="flex gap-2 items-center text-[16px]">
               <AiOutlineMail size={20} />
@@ -40,7 +40,7 @@ function Footer() {
             <p className="text-[24px] font-normal ">Subscribe to our newsletter</p>
             <p className="py-5">Enter your email for more updates</p>
             <input
-              className="border-white border-[1px] p-2 px-4 bg-primary-50 placeholder:text-white w-[70%] h-[50px]"
+              className="border-white border-[1px] p-2 px-4 bg-[#C80001] placeholder:text-white w-[70%] h-[50px]"
               type="text"
               placeholder="Enter your Email"
             />

@@ -15,35 +15,35 @@ export const PRODUCTS = [
     {
         id: 1,
         productName: "White Puma Converse",
-        price: 40000,
+        price: 42900,
         productImage: product1,
         rating: 5
     },
     {
         id: 2,
         productName: "High Heel Shoes",
-        price: 23000,
+        price: 23500,
         productImage: product2,
         rating: 1
     },
     {
         id: 3,
         productName: "Brown High Heel",
-        price: 32000,
+        price: 32200,
         productImage: product3,
         rating: 2
     },
     {
         id: 4,
         productName: "Brown Timberland Boots",
-        price: 55000,
+        price: 55400,
         productImage: product4,
         rating: 4
     },
     {
         id: 5,
         productName: "Brown Birkenstocks",
-        price: 20000,
+        price: 26950,
         productImage: product5,
         rating: 3
     },
@@ -57,7 +57,7 @@ export const PRODUCTS = [
     {
         id: 7,
         productName: "Red Nike Shoes",
-        price: 81000,
+        price: 81600,
         productImage: product7,
         rating: 4
     },
