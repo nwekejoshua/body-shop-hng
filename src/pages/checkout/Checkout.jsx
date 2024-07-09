@@ -1,7 +1,10 @@
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 
 const Checkout = () => {
+    const navigate = useNavigate();
+
 
   return (
         <div className="-mt-[60vh]">
@@ -106,7 +109,16 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-        <button onClick={() => {toast.success('Order Received Successfully!')
+        <button onClick={() => {
+            toast.success('Order Received Successfully!');
+            setTimeout(() => {
+                toast.success('Returning To Home Page!');
+            }, 1000);
+
+            setTimeout(() => {
+                navigate("/");
+              }, 2000);
+            
 }} className="bg-orange-500 text-white w-full py-3 rounded-lg text-center md:mb-4 font-semibold">
           Proceed to Pay
         </button>
