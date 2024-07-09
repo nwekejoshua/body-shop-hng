@@ -24,23 +24,31 @@ function Cart() {
       </div>
       </div>
 
-      <div className="flex justify-around items-center p-4">
-      <button className="text-orange-500" onClick={() => navigate("/")}>Continue Shopping</button>
-      <div className="text-right">
-        <div className="mb-1 space-x-10">
-          <span className="font-semibold">Subtotal</span> <span>₦40,000</span>
+
+      <div className="px-5 md:w-2/3 mt-10 md:mt-[68px] mx-auto   ">
+        <div className="bg-white border-gray-300 border-[1px]  p-6 rounded-lg font-semibold space-y-5">
+
+          <div className="flex justify-between mb-4">
+            <p>Subtotal</p>
+            <p>₦40,000</p>
+          </div>
+          <div className="flex justify-between mb-4">
+            <p>V.A.T</p>
+            <p>₦0.00</p>
+          </div>
+          <div className="flex justify-between font-semibold text-xl">
+            <p>Total</p>
+            <p>₦40,000</p>
+          </div>
         </div>
-        <div className="mb-1 space-x-20">
-          <span className="font-semibold">V.A.T</span> <span>₦0.00</span>
-        </div>
-        <hr className="my-2" />
-        <div className="mb-1 space-x-[60px]">
-          <span className="font-semibold">Total</span> <span>₦40,000</span>
-        </div>
-        <button className="mt-4 bg-orange-500 text-white py-2 px-4 rounded" onClick={() => navigate("/checkout")}>
+      </div>
+
+
+      <div className="flex flex-col item  md:flex-row justify-around md:items-center p-4 px-20 gap-y-3">
+      <button className="text-orange-500 w-full md:w-[40%] border-orange-500 border rounded px-4 py-2" onClick={() => navigate("/")}>Continue Shopping</button>
+      <button className="bg-orange-500 w-full md:w-[40%] text-white py-2 px-4 rounded" onClick={() => navigate("/checkout")}>
           Proceed to Checkout
         </button>
-      </div>
     </div>
     </div>
   );

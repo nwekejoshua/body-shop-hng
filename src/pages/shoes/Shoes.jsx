@@ -19,7 +19,7 @@ function Shoes() {
               <BsFilterLeft />
               <p>Filter</p>
           </div>
-          <div className="flex gap-2 items-center bg-[#F08000] text-white p-2 rounded-lg"> 
+          <div className="flex gap-2 items-center text-[#F08000] cursor-pointer p-2 rounded-lg"> 
               <p>Sort By</p>
               <MdKeyboardArrowDown />
           </div>

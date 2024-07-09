@@ -69,12 +69,6 @@ function Navbar() {
             />
           </div>
 
-          {/* <div className="relative">
-            <FiHeart className="bg-primary-50 rounded-3xl p-[10px]" size={40} />
-            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-              1
-            </div>
-          </div> */}
 
           <div className="relative">
             <Link to="/cart">
@@ -124,12 +118,6 @@ function Navbar() {
             <div className="hover:text-primary-50 cursor-pointer">Accessories</div>
           </Link>
         </div>
-        <button
-          onClick={toggleMobileMenu}
-          className="mt-4 text-primary-50 hover:text-primary-100 focus:outline-none"
-        >
-          Close
-        </button>
       </div>
     </div>
   );

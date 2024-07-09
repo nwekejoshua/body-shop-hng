@@ -35,7 +35,7 @@ export const PRODUCTS = [
     },
     {
         id: 4,
-        productName: "Brown Timberland Boots",
+        productName: "Brown Boots",
         price: 55400,
         productImage: product4,
         rating: 4
@@ -49,7 +49,7 @@ export const PRODUCTS = [
     },
     {
         id: 6,
-        productName: "Brown Suede Shoes",
+        productName: "Brown Shoes",
         price: 73530,
         productImage: product6,
         rating: 3
@@ -63,7 +63,7 @@ export const PRODUCTS = [
     },
     {
         id: 8,
-        productName: "Nike High Shoes",
+        productName: "Nike Shoes",
         price: 61500,
         productImage: product8,
         rating: 5

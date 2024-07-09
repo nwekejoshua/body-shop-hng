@@ -109,19 +109,7 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-        <button onClick={() => {
-            toast.success('Order Received Successfully!');
-            setTimeout(() => {
-                toast.success('Returning To Home Page!');
-            }, 1000);
 
-            setTimeout(() => {
-                navigate("/");
-              }, 2000);
-            
-}} className="bg-orange-500 text-white w-full py-3 rounded-lg text-center md:mb-4 font-semibold">
-          Proceed to Pay
-        </button>
       </div>
       <div className="w-full md:w-1/3 mt-10 md:mt-[68px] mx-auto  max-w-[408px] ">
         <div className="bg-white border-gray-300 border-[1px]  p-6 rounded-lg space-y-10">
@@ -151,6 +139,19 @@ const Checkout = () => {
         </div>
       </div>
     </div>
+    <button onClick={() => {
+            toast.success('Order Received Successfully!');
+            setTimeout(() => {
+                toast.success('Returning To Home Page!');
+            }, 1000);
+
+            setTimeout(() => {
+                navigate("/");
+              }, 2000);
+            
+}} className="bg-orange-500 text-white ml-[10%] w-[80%] py-3 rounded-lg text-center mb-4 font-semibold">
+          Proceed to Pay
+        </button>
     </div>
   );
 };

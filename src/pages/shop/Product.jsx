@@ -16,14 +16,13 @@ function Product(props) {
 
 
   const handleAddToCart = () => {
-    addToCart(id); // Call the addToCart function from context
+    addToCart(id); 
     toast.success('Added to Cart!')
 
-    // Toggle the text to 'Added to Cart' and reset after a delay
     setIsAdded(true);
     setTimeout(() => {
       setIsAdded(false);
-    }, 2000); // Reset after 2 seconds (example)
+    }, 2000); 
   };
 
   const generateRating = (rating) => {
@@ -89,14 +88,14 @@ function Product(props) {
           className=" w-full rounded-xl"
         />
       </div>
-      <div className="space-y-2 p-5 bg-white rounded-xl">
+      <div className="space-y-2 p-5 bg-gray-300 rounded-xl">
         <div className="flex justify-between font-semibold">
           <h2>{productName}</h2>
           <p>₦{formattedNumber}</p>
         </div>
         <div className="flex justify-between">
           <div>{generateRating(rating)}</div>
-          <p onClick={handleAddToCart} className="cursor-pointer text-[#F08000] hover:text-[#C80001] text-[12px]">
+          <p onClick={handleAddToCart} className="cursor-pointer bg-[#F08000] text-white rounded-md px-1 text-[12px] flex items-center">
       {isAdded ? 'Added to Cart' : 'Add to Cart'}
     </p>          
         </div>

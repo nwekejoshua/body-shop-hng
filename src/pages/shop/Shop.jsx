@@ -15,11 +15,11 @@ function Shop() {
         </div>
   
         <div className="flex justify-between items-center py-3 ">
-        <div className="bg-[#F08000] p-2 rounded-lg flex gap-2 items-center text-white">
+        <div className="bg-[#F08000] p-2 rounded-lg flex gap-2 items-center cursor-pointer text-white">
               <BsFilterLeft />
               <p>Filter</p>
           </div>
-          <div className="flex gap-2 items-center bg-[#F08000] text-white p-2 rounded-lg"> 
+          <div className="flex gap-2 items-center text-[#F08000] cursor-pointer p-2  rounded-lg"> 
               <p>Sort By</p>
               <MdKeyboardArrowDown />
           </div>
