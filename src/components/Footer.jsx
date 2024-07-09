@@ -37,12 +37,13 @@ function Footer() {
             </div>
           </div>
           <div className="">
-            <p className="text-[24px] font-normal ">Subscribe to our newsletter</p>
+            <p className="text-[20px] mt-4 md:mt-0 md:text-[24px] font-normal ">Subscribe to our newsletter</p>
             <p className="py-5">Enter your email for more updates</p>
             <input
               className="border-white border-[1px] p-2 px-4 bg-white placeholder:text-[#C80001] w-[100%]  rounded-md h-[50px]"
               type="text"
               placeholder="Enter your Email"
+              name="newsletteremail"
             />
           </div>
         </div>

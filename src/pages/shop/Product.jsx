@@ -3,6 +3,7 @@ import { ShopContext } from "../../context/shop-context";
 import { useContext } from "react";
 import PropTypes from 'prop-types';
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 
 function Product(props) {
@@ -16,6 +17,7 @@ function Product(props) {
 
   const handleAddToCart = () => {
     addToCart(id); // Call the addToCart function from context
+    toast.success('Added to Cart!')
 
     // Toggle the text to 'Added to Cart' and reset after a delay
     setIsAdded(true);

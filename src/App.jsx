@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Shoes from "./pages/shoes/Shoes";
 import Wears from "./pages/wears/Wears";
 import Checkout from "./pages/checkout/Checkout";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar/>
+          <Toaster
+  position="top-center"
+  reverseOrder={false}
+/>
           <Routes>
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />

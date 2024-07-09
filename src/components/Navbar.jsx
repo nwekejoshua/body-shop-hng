@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FiHeart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -62,6 +61,7 @@ function Navbar() {
               className="border-primary-50 bg-transparent border-[2px] text-black p-2 px-4 rounded-full w-[257px] h-[39px]"
               type="text"
               placeholder=""
+              name='search'
             />
             <BsSearch
               className="absolute right-0 top-0 mr-3 mt-3 text-primary-50"
@@ -69,19 +69,19 @@ function Navbar() {
             />
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <FiHeart className="bg-primary-50 rounded-3xl p-[10px]" size={40} />
             <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
               1
             </div>
-          </div>
+          </div> */}
 
           <div className="relative">
             <Link to="/cart">
               <FaShoppingCart className="bg-primary-50 rounded-3xl p-[10px]" size={40} />
             </Link>
-            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
-              3
+            <div className="bg-[#F08000] rounded-full absolute top-0 right-0 w-[15px] h-[15px] text-[12px] text-white grid place-items-center translate-x-1 -translate-y-1">
+              
             </div>
           </div>
         </div>

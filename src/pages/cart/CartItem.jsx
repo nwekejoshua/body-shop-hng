@@ -4,11 +4,18 @@ import { MdDeleteForever } from "react-icons/md";
 import { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 import PropTypes from "prop-types";
+import toast from "react-hot-toast";
 
 function CartItem(props) {
   const { id, productName, price, productImage } = props.data;
   const formattedNumber = new Intl.NumberFormat("en-US").format(price);
   const { removeFromCart } = useContext(ShopContext);
+
+  const handleRemoveFromCart = () => {
+    removeFromCart(id);
+    toast.error("Removed from Cart!")
+
+  } 
 
   return (
     <div className="font-inter bg-white rounded-[12px] w-[80%] mx-auto border-gray-300 border-[1px]  p-2 md:flex items-center justify-between mb-3">
@@ -35,7 +42,7 @@ function CartItem(props) {
         <p>₦{formattedNumber}</p>
       <div className="">
         <p
-          onClick={() => removeFromCart(id)}
+          onClick={handleRemoveFromCart}
           className="cursor-pointer hover:text-primary-50"
         >
           <MdDeleteForever size={32} />
